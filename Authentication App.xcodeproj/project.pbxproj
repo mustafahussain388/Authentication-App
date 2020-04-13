@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		265EA37DCE523BE5CE80BC59 /* Pods_Authentication_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D531C0E6AEE3ABD25668B7 /* Pods_Authentication_App.framework */; };
 		451557C42444689D0048C159 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451557C32444689D0048C159 /* AppDelegate.swift */; };
 		451557C62444689D0048C159 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451557C52444689D0048C159 /* SceneDelegate.swift */; };
 		451557C82444689D0048C159 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451557C72444689D0048C159 /* ViewController.swift */; };
@@ -14,6 +15,8 @@
 		451557CE2444689D0048C159 /* Authentication_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 451557CC2444689D0048C159 /* Authentication_App.xcdatamodeld */; };
 		451557D0244468A00048C159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 451557CF244468A00048C159 /* Assets.xcassets */; };
 		451557D3244468A00048C159 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451557D1244468A00048C159 /* LaunchScreen.storyboard */; };
+		451557DB24446EAC0048C159 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 451557DA24446EAC0048C159 /* GoogleService-Info.plist */; };
+		451557DD2444808B0048C159 /* PhoneAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451557DC2444808B0048C159 /* PhoneAuthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		451557CF244468A00048C159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		451557D2244468A00048C159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		451557D4244468A00048C159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		451557DA24446EAC0048C159 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		451557DC2444808B0048C159 /* PhoneAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthViewController.swift; sourceTree = "<group>"; };
+		70D531C0E6AEE3ABD25668B7 /* Pods_Authentication_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Authentication_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2896E587E4834F12BE61629 /* Pods-Authentication App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Authentication App.debug.xcconfig"; path = "Target Support Files/Pods-Authentication App/Pods-Authentication App.debug.xcconfig"; sourceTree = "<group>"; };
+		C005E4436982BBBEBFF37A08 /* Pods-Authentication App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Authentication App.release.xcconfig"; path = "Target Support Files/Pods-Authentication App/Pods-Authentication App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				265EA37DCE523BE5CE80BC59 /* Pods_Authentication_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,8 @@
 			children = (
 				451557C22444689D0048C159 /* Authentication App */,
 				451557C12444689D0048C159 /* Products */,
+				913609A52A43EEEED0F9EF31 /* Pods */,
+				8A46874F3CE9C4F405B0AA4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,13 +72,32 @@
 				451557C32444689D0048C159 /* AppDelegate.swift */,
 				451557C52444689D0048C159 /* SceneDelegate.swift */,
 				451557C72444689D0048C159 /* ViewController.swift */,
+				451557DC2444808B0048C159 /* PhoneAuthViewController.swift */,
 				451557C92444689D0048C159 /* Main.storyboard */,
 				451557CF244468A00048C159 /* Assets.xcassets */,
 				451557D1244468A00048C159 /* LaunchScreen.storyboard */,
 				451557D4244468A00048C159 /* Info.plist */,
+				451557DA24446EAC0048C159 /* GoogleService-Info.plist */,
 				451557CC2444689D0048C159 /* Authentication_App.xcdatamodeld */,
 			);
 			path = "Authentication App";
+			sourceTree = "<group>";
+		};
+		8A46874F3CE9C4F405B0AA4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70D531C0E6AEE3ABD25668B7 /* Pods_Authentication_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		913609A52A43EEEED0F9EF31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2896E587E4834F12BE61629 /* Pods-Authentication App.debug.xcconfig */,
+				C005E4436982BBBEBFF37A08 /* Pods-Authentication App.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 451557D7244468A00048C159 /* Build configuration list for PBXNativeTarget "Authentication App" */;
 			buildPhases = (
+				0D2F0B937E82E426A4C7B5F1 /* [CP] Check Pods Manifest.lock */,
 				451557BC2444689D0048C159 /* Sources */,
 				451557BD2444689D0048C159 /* Frameworks */,
 				451557BE2444689D0048C159 /* Resources */,
+				C2DEDE1DDCCBD44DC65A5321 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				451557D3244468A00048C159 /* LaunchScreen.storyboard in Resources */,
+				451557DB24446EAC0048C159 /* GoogleService-Info.plist in Resources */,
 				451557D0244468A00048C159 /* Assets.xcassets in Resources */,
 				451557CB2444689D0048C159 /* Main.storyboard in Resources */,
 			);
@@ -136,12 +169,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D2F0B937E82E426A4C7B5F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Authentication App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2DEDE1DDCCBD44DC65A5321 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Authentication App/Pods-Authentication App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Authentication App/Pods-Authentication App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Authentication App/Pods-Authentication App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		451557BC2444689D0048C159 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				451557C82444689D0048C159 /* ViewController.swift in Sources */,
+				451557DD2444808B0048C159 /* PhoneAuthViewController.swift in Sources */,
 				451557C42444689D0048C159 /* AppDelegate.swift in Sources */,
 				451557C62444689D0048C159 /* SceneDelegate.swift in Sources */,
 				451557CE2444689D0048C159 /* Authentication_App.xcdatamodeld in Sources */,
@@ -286,6 +362,7 @@
 		};
 		451557D8244468A00048C159 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2896E587E4834F12BE61629 /* Pods-Authentication App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +381,7 @@
 		};
 		451557D9244468A00048C159 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C005E4436982BBBEBFF37A08 /* Pods-Authentication App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
